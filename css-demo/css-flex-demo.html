@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Flex Demo</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: row; 
+            /*here main axis is horizontal, cross axis is vertical*/
+            /* flex-direction: column; here the main axis is vertical and cross axis is horizontal */
+            height: 400px;
+            width: auto;
+            background-color: green;
+            justify-content: flex-start; /*always works on main axis*/
+            align-items: flex-start; /* always works on the cross axis*/
+            /* flex-wrap: wrap; */
+        }
+        .flex-item{
+            height: 50px;
+            width: 50px;
+            background-color:beige;
+            margin: 10px;
+            text-align: center;
+        }
+        .item1{
+            background-color: pink;
+            /* flex-grow: 1; */
+            /* align-self: center; */
+        }
+        .item2{
+            background-color: pink;
+            /* flex-grow: 3; */
+            flex-shrink: 3;
+        }
+        .item3{
+            background-color: pink;
+            /* flex-grow: 2; */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+        <div class="flex-item item1" style="order:3;">1</div>
+        <div class="flex-item item2" style="order:7;">2</div>
+        <div class="flex-item item3" style="order:2;">3</div>
+        <div class="flex-item" style="order:8;">4</div>
+        <div class="flex-item" style="order:9;">5</div>
+        <div class="flex-item" style="order:1;">6</div>
+        <div class="flex-item" style="order:5;">7</div>
+        <div class="flex-item" style="order:4;">8</div>
+        <div class="flex-item" style="order:6;">9</div> 
+      
+    </div>
+  </body>
+</html>

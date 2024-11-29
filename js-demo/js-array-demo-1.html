@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h2>List Of Fruits</h2>
+    <ul id="display"></ul>
+
+    <script>
+      let allFruits = ["Apple", "Banana", "Orange"];
+      //   document.getElementById("display").innerHTML =
+      //     "<li>" + allFruits + "</li>";
+      let content = "";
+      for (let i = 0; i < allFruits.length; i++) {
+        content += "<li>" + allFruits[i] + "</li>";
+      }
+      document.getElementById("display").innerHTML = content;
+
+      // reference
+      //   let person = {
+      //     firstName: "Will",
+      //     lastName: "Smith",
+      //     fullName: function () {
+      //       return this.firstName + " " + this.lastName;
+      //     },
+      //   };
+      //   console.log("firstName : ", person.firstName);
+      //   console.log("fullName :", person.fullName());
+    </script>
+  </body>
+</html>

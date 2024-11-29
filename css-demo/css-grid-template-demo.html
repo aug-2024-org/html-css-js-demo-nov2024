@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Page Title</title>
+   <style>
+    .grid-container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 1fr 6fr 2fr;
+        grid-template-areas: 
+        'head head'
+        'navigation navigation'
+        'side maincontent'
+        'foot foot';
+    }
+    .grid-item{
+        background-color:cornflowerblue;
+        border: 1px solid lightblue
+    }
+    .item-header{
+        grid-area: head;
+    }
+    .item-nav{
+        grid-area: navigation;
+    }
+    .item-aside{
+        grid-area: side;
+    }
+    .item-main{
+        grid-area: maincontent;
+    }
+    .item-footer{
+        grid-area: foot;
+    }
+   </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="grid-item item-header">Header</header>
+        <nav class="grid-item item-nav">Navigation</nav>
+        <aside class="grid-item item-aside">Aside</aside>
+        <main class="grid-item item-main">Main</main>
+        <footer class="grid-item item-footer">Footer</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <script>
+      let flag = true;
+      function handleClick() {
+        if (flag) {
+          document.getElementById("div1").innerHTML = "Avengers: End Game";
+        } else {
+          document.getElementById("div1").innerHTML = "";
+        }
+        flag = !flag;
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" onclick="handleClick()">
+      Click to show movie name...
+    </button>
+    <div id="div1"></div>
+  </body>
+</html>

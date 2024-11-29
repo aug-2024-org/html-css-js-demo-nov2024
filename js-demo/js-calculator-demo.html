@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <style>
+      .container {
+        display: grid;
+        width: 170px;
+        height: 150px;
+        background-color: grey;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          'in in in in'
+          'plus one two three'
+          'minus four five six'
+          'divide seven eight nine'
+          'product zero clear equal';
+      }
+      .item{
+        
+      }
+    </style>
+    <script>
+        let num1;
+        let num2;
+        let operator;
+        function calculate(){
+
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" style="grid-area: in;"><input type="text" /></div>
+      <div class="item" style="grid-area: plus;"><button type="button" onclick="calculate()">+</button></div>
+      <div class="item" style="grid-area: minus;"><button type="button" onclick="calculate()">-</button></div>
+      <div class="item" style="grid-area: divide;"><button type="button" onclick="calculate()">/</button></div>
+      <div class="item" style="grid-area: product;;"><button type="button" onclick="calculate()">*</button></div>
+      <div class="item" style="grid-area: one;"><button type="button" onclick="calculate()">1</button></div>
+      <div class="item" style="grid-area: two;"><button type="button" onclick="calculate()">2</button></div>
+      <div class="item" style="grid-area: three;"><button type="button" onclick="calculate()">3</button></div>
+      <div class="item" style="grid-area: four;"><button type="button" onclick="calculate()">4</button></div>
+      <div class="item" style="grid-area: five;"><button type="button" onclick="calculate()">5</button></div>
+      <div class="item" style="grid-area: six;"><button type="button" onclick="calculate()">6</button></div>
+      <div class="item" style="grid-area: seven;"><button type="button" onclick="calculate()">7</button></div>
+      <div class="item" style="grid-area: eight;"><button type="button" onclick="calculate()">8</button></div>
+      <div class="item" style="grid-area: nine;"><button type="button" onclick="calculate()">9</button></div>
+      <div class="item" style="grid-area: zero;"><button type="button" onclick="calculate()">0</button></div>
+      <div class="item" style="grid-area: equal;"><button type="button" onclick="calculate()">=</button></div>
+      <div class="item" style="grid-area: clear;"><button type="button" onclick="calculate()">C</button></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <script>
+      document.getElementById("div1").innerHTML =
+        "<p>This is displayed using innerHTML property<p>";
+      document.getElementById("div2").innerText =
+        "<p>This is displayed using innerText property<p>";
+      console.log("HtmlElement : ", document.getElementById("div1"));
+      console.log("id :", document.getElementById("div1").id);
+      document.body.style.backgroundColor = "lightpink";
+    </script>
+  </body>
+</html>

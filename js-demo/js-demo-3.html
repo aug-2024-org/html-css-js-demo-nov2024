@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <script>
+      let handleColorChange = function (value) {
+        document.body.style.backgroundColor =
+        //   document.getElementsByTagName("select")[0].value;
+        value;
+      };
+      let handleClick = function () {
+        alert("test");
+      }
+    </script>
+  </head>
+  <body>
+    <select onchange="handleColorChange(value);handleClick()">
+      <option value="">--select--</option>
+      <option value="red">RED</option>
+      <option value="blue">BLUE</option>
+      <option value="green">GREEN</option>
+    </select>
+  </body>
+</html>
