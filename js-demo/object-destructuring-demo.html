@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <script>
+      let personalDetails = {
+        firstName: "Will",
+        lastName: "Smith",
+        city: "Atlanta",
+        state: "Georgia",
+        country: "USA",
+      };
+      //   let firstName = personalDetails.firstName;
+      //   let lastName = personalDetails.lastName;
+      //   let city = personalDetails.city;
+      //   let state = personalDetails.state;
+      //   let country = personalDetails.country;
+
+      let {
+        firstName: fName,
+        lastName,
+        city,
+        state,
+        country,
+      } = personalDetails; // object destructuring
+      console.log(fName);
+      console.log(lastName);
+    </script>
+  </head>
+  <body>
+    <h2>Object Destructuring Demo</h2>
+  </body>
+</html>

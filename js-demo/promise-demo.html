@@ -24,7 +24,10 @@
             (result) => (document.getElementById("data").innerHTML = result)
           )
           .catch(
-            (error) => (document.getElementById("data").innerHTML = `<p class="text-danger">${error}</p>`)
+            (error) =>
+              (document.getElementById(
+                "data"
+              ).innerHTML = `<p class="text-danger">${error}</p>`)
           );
       }
     </script>

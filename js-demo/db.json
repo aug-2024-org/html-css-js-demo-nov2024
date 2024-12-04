@@ -1,0 +1,23 @@
+{
+  "books": [
+    {
+      "id": "102",
+      "bookTitle": "Harry Potter and the Half Blood Prince",
+      "bookAuthorId": 501,
+      "bookCost": 450,
+      "bookImageUrl": "https://cdn.pixabay.com/photo/2021/02/18/20/15/book-6028303_1280.jpg"
+    }
+  ],
+  "authors": [
+    {
+      "id": "501",
+      "authorFirstName": "JK",
+      "authorLastName": "Rowling"
+    },
+    {
+      "id": "502",
+      "authorFirstName": "Geronimo",
+      "authorLastName": "Stilton"
+    }
+  ]
+}

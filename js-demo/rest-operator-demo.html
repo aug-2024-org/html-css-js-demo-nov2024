@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <script>
+      let allCity = ["Chennai", "Mumbai", "Delhi", "Pune", "Kolkatta"];
+      // let city1 = allCity[0];
+      // let city2 = allCity[1];
+      // let city3 = allCity[2];
+
+      let [city1, city2, city3, ...remainingCities] = allCity; // array destructuring and rest operator
+      console.log(city1);
+      console.log(city2);
+      console.log(city3);
+      console.log(remainingCities);
+    </script>
+  </head>
+  <body>
+    <h2>Rest Operator Demo with Array Destructuring</h2>
+  </body>
+</html>
